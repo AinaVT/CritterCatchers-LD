@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdnogoadfp5bq"]
+
+[ext_resource type="PackedScene" uid="uid://b1twyybay4mdy" path="res://entities/lanius_ending/lanius_ending.tscn" id="1_0qqoy"]
+
+[node name="EndCutscene" type="Node2D"]
+
+[node name="LaniusEnding" parent="." instance=ExtResource("1_0qqoy")]

@@ -1,0 +1,17 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamWAV"
+uid="uid://dahbhs1pxpioy"
+path="res://.godot/imported/wrapping.sfxr-d68a5119fa92eb1dd267758b773d0d6c.sample"
+
+[deps]
+
+source_file="res://sfx/sounds/wrapping.sfxr"
+dest_files=["res://.godot/imported/wrapping.sfxr-d68a5119fa92eb1dd267758b773d0d6c.sample"]
+
+[params]
+
+loop=false
+bit_depth=0
+sample_rate=0

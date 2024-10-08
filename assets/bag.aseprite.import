@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite_wizard.plugin.static-texture"
+type="AtlasTexture"
+uid="uid://bd4exuxg8qypv"
+path="res://.godot/imported/bag.aseprite-a1e92e3286fc26920917a6a41a55706a.res"
+
+[deps]
+
+source_file="res://assets/bag.aseprite"
+dest_files=["res://.godot/imported/bag.aseprite-a1e92e3286fc26920917a6a41a55706a.res"]
+
+[params]
+
+exclude_layers_pattern=""
+only_visible_layers=false

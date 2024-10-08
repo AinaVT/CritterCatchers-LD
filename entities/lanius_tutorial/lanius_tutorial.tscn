@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://j7407nvlgqbi"]
+
+[ext_resource type="PackedScene" uid="uid://c1q843uak6htx" path="res://entities/lanius/lanius.tscn" id="1_8bing"]
+[ext_resource type="Script" path="res://entities/lanius_tutorial/lanius_tutorial.gd" id="1_m16lj"]
+
+[node name="LaniusTutorial" instance=ExtResource("1_8bing")]
+script = ExtResource("1_m16lj")

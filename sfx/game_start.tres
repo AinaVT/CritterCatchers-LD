@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SoundEffect" load_steps=3 format=3 uid="uid://dm7ay2g51lui1"]
+
+[ext_resource type="Script" path="res://sfx/scripts/sound_effect.gd" id="1_b6ocj"]
+[ext_resource type="AudioStream" uid="uid://bi0si7cijp462" path="res://sfx/sounds/game_start.wav" id="2_nmal7"]
+
+[resource]
+script = ExtResource("1_b6ocj")
+stream = ExtResource("2_nmal7")
+polyphony = 1

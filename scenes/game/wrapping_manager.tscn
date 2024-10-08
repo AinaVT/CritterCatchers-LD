@@ -1,0 +1,12 @@
+[gd_scene load_steps=5 format=3 uid="uid://j81avxh4ked"]
+
+[ext_resource type="Script" path="res://scenes/game/scripts/wrapping_manager.gd" id="1_8iavj"]
+[ext_resource type="Resource" uid="uid://chve3c13irsob" path="res://sfx/wrapping_sound.tres" id="2_pki6t"]
+[ext_resource type="Resource" uid="uid://duq8g4l456b08" path="res://sfx/catch_sound.tres" id="3_uvu7v"]
+[ext_resource type="PackedScene" uid="uid://dbbhfggi0uamo" path="res://entities/bag/bag.tscn" id="4_fk6b0"]
+
+[node name="WrappingManager" type="Node"]
+script = ExtResource("1_8iavj")
+wrapping_sound = ExtResource("2_pki6t")
+catch_sound = ExtResource("3_uvu7v")
+bag_node = ExtResource("4_fk6b0")

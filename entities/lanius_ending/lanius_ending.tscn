@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://b1twyybay4mdy"]
+
+[ext_resource type="PackedScene" uid="uid://c1q843uak6htx" path="res://entities/lanius/lanius.tscn" id="1_tv1id"]
+[ext_resource type="Script" path="res://entities/lanius_ending/lanius_ending.gd" id="2_smf1d"]
+
+[node name="LaniusEnding" instance=ExtResource("1_tv1id")]
+script = ExtResource("2_smf1d")

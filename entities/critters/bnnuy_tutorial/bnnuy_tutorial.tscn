@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpsariuc5gr6k"]
+
+[ext_resource type="PackedScene" uid="uid://dpsy8x3eejp24" path="res://entities/critters/bnnuy/bnnuy.tscn" id="1_cbl0x"]
+[ext_resource type="Script" path="res://entities/critters/bnnuy_tutorial/bnnuy_tutorial.gd" id="2_n1mvp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0ixes"]
+size = Vector2(2, 2)
+
+[node name="Bnnuy" instance=ExtResource("1_cbl0x")]
+script = ExtResource("2_n1mvp")
+
+[node name="SleepingDetector" type="Area2D" parent="." index="3"]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SleepingDetector" index="0"]
+shape = SubResource("RectangleShape2D_0ixes")
+
+[connection signal="area_entered" from="SleepingDetector" to="." method="_on_sleeping_detector_area_entered"]

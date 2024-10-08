@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite_wizard.plugin.static-texture"
+type="AtlasTexture"
+uid="uid://cxigvy4tulets"
+path="res://.godot/imported/blood_particle.aseprite-70bf31efc7574df16ec690b13185e7b8.res"
+
+[deps]
+
+source_file="res://assets/blood_particle.aseprite"
+dest_files=["res://.godot/imported/blood_particle.aseprite-70bf31efc7574df16ec690b13185e7b8.res"]
+
+[params]
+
+exclude_layers_pattern=""
+only_visible_layers=false

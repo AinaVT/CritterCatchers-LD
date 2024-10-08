@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=3 uid="uid://lotg201xrix7"]
+
+[ext_resource type="Script" path="res://globals/floating_text/floating_text.gd" id="1_bfkxk"]
+
+[sub_resource type="Animation" id="Animation_fplmr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_06diq"]
+resource_name = "default"
+length = 1.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8, 0.85, 0.9, 0.95, 1, 1.05, 1.1, 1.15, 1.2, 1.25, 1.3, 1.35, 1.4, 1.45),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, true, false, true, false, true, false, true, false, true, false, true, false, true, false]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LabelAnchor:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
+"points": PackedFloat32Array(10.1387, -0.25, 0, 0.0307831, -13.3049, 0.140776, -0.0743175, -5.67925, 0.0670922, 6.04695, 0.603821, -0.0851453, -7.03572, 0.0399113, 2.0102, -0.0662474, -0.0591267, -2.34524, 0.0245647, 1.51866, 0, -0.0333333, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.283334, 0.429799, 0.531723, 0.65)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_rv3v8"]
+_data = {
+"RESET": SubResource("Animation_fplmr"),
+"default": SubResource("Animation_06diq")
+}
+
+[node name="FloatingText" type="Node2D"]
+z_index = 3
+script = ExtResource("1_bfkxk")
+
+[node name="LabelAnchor" type="Node2D" parent="."]
+position = Vector2(0, 10.1387)
+
+[node name="Label" type="Label" parent="LabelAnchor"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.945098, 0.909804, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_font_sizes/font_size = 5
+text = "Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_rv3v8")
+}
+autoplay = "default"
+speed_scale = 1.5

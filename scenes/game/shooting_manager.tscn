@@ -1,0 +1,14 @@
+[gd_scene load_steps=6 format=3 uid="uid://il0rnprlgux"]
+
+[ext_resource type="Script" path="res://scenes/game/scripts/shooting_manager.gd" id="1_bpb7s"]
+[ext_resource type="PackedScene" uid="uid://c68o7dpct1c5y" path="res://vfx/blood_particles.tscn" id="2_jt8s4"]
+[ext_resource type="Resource" uid="uid://s2sa58a1a7je" path="res://sfx/shoot_sound.tres" id="3_brdi2"]
+[ext_resource type="Resource" uid="uid://bh4mdjae8cqxw" path="res://sfx/lever_begin.tres" id="4_vki4w"]
+[ext_resource type="Resource" uid="uid://7iggmy3o431h" path="res://sfx/lever_end.tres" id="5_1ccn3"]
+
+[node name="ShootingManager" type="Node"]
+script = ExtResource("1_bpb7s")
+blood_particles = ExtResource("2_jt8s4")
+shoot_sound = ExtResource("3_brdi2")
+lever_sound_begin = ExtResource("4_vki4w")
+lever_sound_end = ExtResource("5_1ccn3")

@@ -1,0 +1,17 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamWAV"
+uid="uid://b51hjs0bl30i3"
+path="res://.godot/imported/time_warning.sfxr-c5f6f64fef9b626768be2d77cef86727.sample"
+
+[deps]
+
+source_file="res://sfx/sounds/time_warning.sfxr"
+dest_files=["res://.godot/imported/time_warning.sfxr-c5f6f64fef9b626768be2d77cef86727.sample"]
+
+[params]
+
+loop=false
+bit_depth=0
+sample_rate=0

@@ -1,0 +1,16 @@
+[remap]
+
+importer="aseprite_wizard.plugin.static-texture"
+type="AtlasTexture"
+uid="uid://csvupkuu18wgv"
+path="res://.godot/imported/bad_logo.aseprite-1fa68d338b8728bddd1b182e0c8dc971.res"
+
+[deps]
+
+source_file="res://assets/bad_logo.aseprite"
+dest_files=["res://.godot/imported/bad_logo.aseprite-1fa68d338b8728bddd1b182e0c8dc971.res"]
+
+[params]
+
+exclude_layers_pattern=""
+only_visible_layers=false

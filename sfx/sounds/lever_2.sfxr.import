@@ -1,0 +1,17 @@
+[remap]
+
+importer="com.timothyqiu.gdfxr.importer"
+type="AudioStreamWAV"
+uid="uid://chcrit2bt87m7"
+path="res://.godot/imported/lever_2.sfxr-87d1fc7921585911fc3910a2568a4345.sample"
+
+[deps]
+
+source_file="res://sfx/sounds/lever_2.sfxr"
+dest_files=["res://.godot/imported/lever_2.sfxr-87d1fc7921585911fc3910a2568a4345.sample"]
+
+[params]
+
+loop=false
+bit_depth=0
+sample_rate=0

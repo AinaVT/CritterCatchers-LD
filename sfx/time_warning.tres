@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SoundEffect" load_steps=3 format=3 uid="uid://dapiha21odvjo"]
+
+[ext_resource type="Script" path="res://sfx/scripts/sound_effect.gd" id="1_mhor4"]
+[ext_resource type="AudioStream" uid="uid://b51hjs0bl30i3" path="res://sfx/sounds/time_warning.sfxr" id="2_pfhmm"]
+
+[resource]
+script = ExtResource("1_mhor4")
+stream = ExtResource("2_pfhmm")
+polyphony = 1

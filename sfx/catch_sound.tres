@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SoundEffect" load_steps=3 format=3 uid="uid://duq8g4l456b08"]
+
+[ext_resource type="Script" path="res://sfx/scripts/sound_effect.gd" id="1_u6d1o"]
+[ext_resource type="AudioStream" uid="uid://cucccr6od0rlw" path="res://sfx/sounds/catch.sfxr" id="2_jf6yi"]
+
+[resource]
+script = ExtResource("1_u6d1o")
+stream = ExtResource("2_jf6yi")
+polyphony = 2

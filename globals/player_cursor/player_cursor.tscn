@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd0rc5mguuf7p"]
+
+[ext_resource type="Script" path="res://globals/player_cursor/scripts/player_cursor.gd" id="1_pdh6p"]
+[ext_resource type="SpriteFrames" uid="uid://bxsf1fficssj5" path="res://globals/player_cursor/sprites/hand_cursor.aseprite" id="1_ydxfy"]
+[ext_resource type="SpriteFrames" uid="uid://dvmaqg55tp7o3" path="res://globals/player_cursor/sprites/crosshair.aseprite" id="2_b6t5b"]
+
+[node name="PlayerCursor" type="Node2D"]
+top_level = true
+z_index = 999
+script = ExtResource("1_pdh6p")
+hand_sprite = ExtResource("1_ydxfy")
+crosshair_sprite = ExtResource("2_b6t5b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_b6t5b")
+animation = &"Normal"
